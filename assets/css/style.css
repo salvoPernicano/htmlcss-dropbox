@@ -26,6 +26,13 @@ nav{
     padding: 20px;
 }
 
+.blue_button{
+    background-color: #0061ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
 .left_list,.right_list {
     display: flex;
     gap: 20px;
@@ -56,7 +63,7 @@ section img {
     background-color: #b4d0e7;
 }
 
-.container_jumbo{
+.container{
     width: 70%;
     margin: 0 auto;
 }
@@ -96,4 +103,58 @@ section img {
 
 .fa-arrow-down{
     font-size: 50px;
+}
+
+
+
+.priceplan{
+    border: 3px dashed blue;
+    height: 90vh;
+}
+
+.priceplan h2{
+    font-size: 3rem;
+    margin-block: 2em;
+}
+
+#charging_period{
+    margin-bottom: 5em;
+}
+
+#charging_period label {
+    margin-right: 2em;
+}
+
+.profile_plans{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.profile_type{
+    text-align: center;
+    border: 1px solid lightgrey;
+    padding-block: 10px;
+}
+
+.profile_card{
+    width: calc(100% / 3 - 40px);
+}
+
+.profile_card span {
+    display: block;
+    margin-block: 10px;
+}
+
+.profile_card ul {
+    list-style: none;
+}
+
+.profile_card ul li {
+    margin-block: 10px;
+}
+
+.card_body{
+    border: 1px solid lightgrey;
+    padding: 2em;
 }
