@@ -108,8 +108,7 @@ section img {
 
 
 .priceplan{
-    border: 3px dashed blue;
-    height: 90vh;
+    height: 140vh;
 }
 
 .priceplan h2{
@@ -139,6 +138,7 @@ section img {
 
 .profile_card{
     width: calc(100% / 3 - 40px);
+    border: 1px solid lightgrey;
 }
 
 .profile_card span {
@@ -148,13 +148,14 @@ section img {
 
 .profile_card ul {
     list-style: none;
+    margin-block: 2em;
 }
 
 .profile_card ul li {
-    margin-block: 10px;
+    line-height: 2.5em;
 }
 
 .card_body{
-    border: 1px solid lightgrey;
     padding: 2em;
 }
+
