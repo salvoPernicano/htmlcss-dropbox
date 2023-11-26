@@ -285,3 +285,36 @@ label {
     width: 70%;
     margin: auto;
 }
+
+.partner_contact{
+    margin-top: 8em;
+    display: flex;
+}
+
+.partner_contact figure{
+    border: 1px solid blue;
+    flex-basis: 50%;
+}
+
+.partner_contact_text{
+    padding: 5em;
+    border: 1px dashed red;
+    flex-basis: 50%;
+}
+
+.partner_contact_text h2{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.partner_contact_text P{
+    padding-block: 3em;
+}
+
+.partner_contact_text button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
