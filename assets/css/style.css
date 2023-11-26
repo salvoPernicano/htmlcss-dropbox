@@ -287,18 +287,16 @@ label {
 }
 
 .partner_contact{
-    margin-top: 8em;
+    margin-block: 8em;
     display: flex;
 }
 
 .partner_contact figure{
-    border: 1px solid blue;
     flex-basis: 50%;
 }
 
 .partner_contact_text{
     padding: 5em;
-    border: 1px dashed red;
     flex-basis: 50%;
 }
 
@@ -318,3 +316,26 @@ label {
     font-size: 1.1em;
     cursor: pointer;
 }
+
+.dropbox_features{
+    margin-block: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.dropbox_features_box{
+flex-basis: calc(100% / 3 - 3em);
+}
+
+
+
+.dropbox_features_box h3{
+    padding-bottom: 1.5em;
+}
+
+#features_title{
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
