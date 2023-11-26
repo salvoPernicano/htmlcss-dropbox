@@ -1,54 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Familjen Grotesk", sans-serif;
 }
 
-header{
+header {
     background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     text-transform: capitalize;
+    z-index: 3;
 }
 
-nav{
+header img{
+    cursor: pointer;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.blue_button{
+.blue_button {
     background-color: #0061ff;
     color: white;
     padding: 10px 20px;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.left_list,.right_list {
+.left_list,
+.right_list {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.left_list ul, .right_list ul {
+.left_list ul,
+.right_list ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-.left_list ul li a, .right_list ul li a{
+.left_list ul li a,
+.right_list ul li a {
     text-decoration: none;
     color: black;
-} 
+}
 
 
 
@@ -63,12 +73,12 @@ section img {
     background-color: #b4d0e7;
 }
 
-.container{
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
-.container_jumbo h1{
+.container_jumbo h1 {
     font-size: 80px;
     font-weight: 700;
 }
@@ -78,7 +88,7 @@ section img {
     display: flex;
 }
 
-.jumbo_flex figure{
+.jumbo_flex figure {
     flex-basis: 70%;
     position: relative;
     top: 50px;
@@ -86,7 +96,7 @@ section img {
 
 
 
-.jumbo_text{
+.jumbo_text {
     margin-top: 50px;
     flex-basis: 30%;
     font-size: 1.2rem;
@@ -97,26 +107,24 @@ section img {
     justify-content: space-between;
 }
 
-.jumbo_text button{
+.jumbo_text button {
     width: 50%;
 }
 
-.fa-arrow-down{
+.fa-arrow-down {
     font-size: 50px;
 }
 
 
 
-.priceplan{
-    height: 140vh;
-}
 
-.priceplan h2{
+
+.priceplan h2 {
     font-size: 3rem;
     margin-block: 2em;
 }
 
-#charging_period{
+#charging_period {
     margin-bottom: 5em;
 }
 
@@ -124,20 +132,21 @@ section img {
     margin-right: 2em;
 }
 
-.profile_plans{
+.profile_plans {
     display: flex;
     gap: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-content: center;
 }
 
-.profile_type{
+.profile_type {
     text-align: center;
     border: 1px solid lightgrey;
     padding-block: 10px;
 }
 
-.profile_card{
-    width: calc(100% / 3 - 40px);
+.profile_card {
+    width: calc(1000% / 3 - 40px);
     border: 1px solid lightgrey;
 }
 
@@ -152,10 +161,87 @@ section img {
 }
 
 .profile_card ul li {
-    line-height: 2.5em;
+    margin-block: 1.5em;
 }
 
-.card_body{
+.card_body {
     padding: 2em;
 }
 
+.user_list,
+.plan_features {
+    margin-left: 1em;
+}
+
+.user_list li,
+.plan_features li {
+    padding-left: 5px;
+}
+
+
+
+.user_list li:nth-child(1)::marker {
+    content: "\f007";
+    font-family: "FontAwesome";
+
+}
+
+.user_list li:nth-child(2)::marker {
+    content: "\f07b";
+    font-family: "FontAwesome";
+}
+
+.user_list li:nth-child(3)::marker {
+    content: "\f1e0";
+    font-family: "FontAwesome";
+}
+
+#team_icon::marker{
+    content: "\f0c0";
+    font-family: "FontAwesome";
+}
+
+.card_body button {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.card_body span:first-of-type{
+    font-weight: bold;
+}
+
+.card_body span:last-of-type {
+    margin-block: 2em;
+}
+
+.card_body h3:first-of-type{
+    font-size: 1.5em;
+}
+
+.card_body hr {
+    width: 30%;
+    color: lightgrey;
+}
+
+.plan_highlights {
+    margin-block: 2em;
+}
+
+.plan_features ul li::marker {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #0061ff;
+}
+
+.plan_features h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.fa-solid{
+    margin-right: 5px;
+}
+
+label {
+    font-size: 1.5rem;
+}
