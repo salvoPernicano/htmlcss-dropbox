@@ -9,6 +9,7 @@
 
 html {
     font-family: "Familjen Grotesk", sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -37,7 +38,11 @@ nav {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: all .5s;
+}
 
+.blue_button:hover{
+   filter: brightness(150%);
 }
 
 .left_list,
@@ -58,6 +63,12 @@ nav {
 .right_list ul li a {
     text-decoration: none;
     color: black;
+    padding-bottom: 25px;
+}
+
+.left_list ul li a:hover,
+.right_list ul li a:hover{
+    border-bottom: 2px solid black;
 }
 
 
@@ -114,8 +125,6 @@ section img {
 .fa-arrow-down {
     font-size: 50px;
 }
-
-
 
 
 
