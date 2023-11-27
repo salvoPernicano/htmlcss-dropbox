@@ -318,12 +318,17 @@ label {
     padding-block: 3em;
 }
 
-.partner_contact_text button{
+#transparent_button{
     background-color: white;
     border: 1px solid black;
     padding: 10px 15px;
     font-size: 1.1em;
     cursor: pointer;
+}
+
+#transparent_button:hover{
+    filter: brightness(150%);
+    color: grey;
 }
 
 .dropbox_features{
