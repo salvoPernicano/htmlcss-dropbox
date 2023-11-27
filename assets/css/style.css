@@ -364,7 +364,6 @@ flex-basis: calc(100% / 3 - 3em);
 }
 
 .squares{
-    border: 1px solid lime;
     height: 60vh;
     width: 100%;
     display: flex;
@@ -373,15 +372,77 @@ flex-basis: calc(100% / 3 - 3em);
 .squares_left,
 .squares_middle,
 .squares_right{
-    border: 1px solid red;
     flex-basis: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
 }
 
 .square{
-    border: 2px solid blue;
     height: 50%;
     width: 50%;
+    padding: 4em;
+}
 
+.square img{
+    filter: invert(1);
+}
+
+.squares_left div:nth-child(1){
+    border: 15px solid #d1e9cd;
+    background-color: #a2d39b;
+    background-image: url(../img/designit.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.squares_left div:nth-child(2){
+  background-color: #61082b;
+  background-image: url(../img/arizona_state_university.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.squares_left div:nth-child(3){
+    background-image: url(../img/university_of_florida.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0093ce;
+}
+
+.squares_left div:nth-child(4){
+  background-color: #ff1c1c;
+  background-image: url(../img/topps.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.squares_right div:nth-child(1){
+    background-image: url(../img/world_bicycle_relief.svg);
+    background-color: #d5001f;
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;  
+}
+.squares_right div:nth-child(2){
+    background-image: url(../img/hearst_corp.svg);
+    background-color: #b4d0e7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.squares_right div:nth-child(3){
+    background-image: url(../img/lonely_planet.svg);
+    background-color: #0d2481;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.squares_right div:nth-child(4){
+    background-image: url(../img/clear_channel.svg);
+    background-color: #ffd830;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
 }
