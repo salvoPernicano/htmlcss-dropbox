@@ -488,3 +488,44 @@ flex-basis: calc(100% / 3 - 3em);
     background-color: white;
     border: none;
 }
+
+.faq{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.faq h2,.faq_card{
+    border-bottom: 1px solid grey;
+    padding-bottom: 2em;
+}
+
+.faq_card{
+    position: relative;
+    transition:2s;
+}
+
+.hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.faq_card:hover .hide{
+    padding-top: 2em;
+    position: relative;
+    opacity: 1;
+}
+
+.faq_question::after{
+    position: relative;
+    left: 70%;
+    content: "\f078";
+    font-family: "FontAwesome";
+}
