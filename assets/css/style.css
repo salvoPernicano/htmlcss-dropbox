@@ -353,3 +353,35 @@ flex-basis: calc(100% / 3 - 3em);
     padding-bottom: 1em;
 }
 
+.discover_clients{
+    margin: 0 auto;
+    margin-block: 8em;
+}
+
+.discover_clients h2{
+    font-size: 3rem;
+    padding-bottom: 2em;
+}
+
+.squares{
+    border: 1px solid lime;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.squares_left,
+.squares_middle,
+.squares_right{
+    border: 1px solid red;
+    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    border: 2px solid blue;
+    height: 50%;
+    width: 50%;
+
+}
