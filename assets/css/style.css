@@ -489,7 +489,6 @@ flex-basis: calc(100% / 3 - 3em);
 
 .faq_card{
     position: relative;
-    transition:2s;
 }
 
 .hide{
@@ -512,4 +511,49 @@ flex-basis: calc(100% / 3 - 3em);
     left: 70%;
     content: "\f078";
     font-family: "FontAwesome";
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5em;
+}
+
+footer hr{
+    margin-block: 4em;
+    width: 10%;
+}
+
+.footer_box{
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 3em;
+}
+
+.footer_box h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 2em;
+}
+
+footer span{
+    color:grey;
+}
+
+footer span::before{
+    content: "\f57d";
+    font-family: "Fontawesome";
+    margin-right: 5px;
+}
+
+footer span::after{
+    content: "\f0d8";
+    font-family: "Fontawesome";
+    margin-left:5px;
+}
+
+.footer_box ul{
+    list-style: none;
+    line-height: 200%;
+    font-size: 1.1rem;
 }
